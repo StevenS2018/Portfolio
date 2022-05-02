@@ -1,0 +1,45 @@
+using System;
+using BankApplication;
+using System.Collections.Generic;
+
+namespace BankApplication
+{
+// declaring that the
+arrays are matching
+
+    internal class Program
+    {
+
+        private static void Main(string[] args)
+        {
+            int[] number = { 1, 1 };
+            bool expected = true;
+            bool actual = AND(number);
+            PrintMessage(expected, actual);
+        
+        }
+        private static void PrintMessage(bool expected, bool actual)
+        {
+            Console.WriteLine($"expected results: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+        }
+
+        private static bool AND(int[] number)
+        
+        {
+            Console.WriteLine("Checking if arrays are matching....");
+            Console.WriteLine($"{ number[0]},  { number[1]}");
+            bool expression = false;
+
+            if(number[0] == number[1])
+            {
+
+                expression = true;
+                Console.WriteLine($"{expression}: The arrays match");
+               
+            }
+            return expression;
+          
+        }
+    }
+}
