@@ -1,6 +1,6 @@
 ﻿using System.Data.SqlClient;
 
-namespace ExerciseWebApp.Models
+namespace MVCWebApplication.Models
 {
     public class MoviesModel
     {
